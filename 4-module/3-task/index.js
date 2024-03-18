@@ -5,7 +5,7 @@ function highlight(table) {
     for (let cell of row) {
       let availableAttr = cell.getAttribute('data-available');
       if (!table.rows[i].cells[3].hasAttribute('data-available')) {
-        table.rows[i].setAttribute("hidden", "true");
+        table.rows[i].hidden = true;
       }
 
       switch (availableAttr) {
